@@ -16,6 +16,7 @@ This project showcases the workflow required to bridge the gap between network-l
  **Static IP & DNS Setup**
   **What it does:** Assigns a fixed IP address ($192.168.1.11$) to the workstation and configures the DNS settings to point to the Domain Controller ($192.168.1.10$).
   **Why it is necessary:** A static identity is required for consistent network communication, and proper DNS resolution is critical for the client to locate domain services.
+  
   ![NSLookup Tool](./images/nslookup.png)
   ![NSLookup Result](./images/nslookupresult.png)
 
@@ -23,7 +24,8 @@ This project showcases the workflow required to bridge the gap between network-l
  **Workstation Domain Join**
   **What it does:** Migrates the "James" workstation from a local workgroup environment into the `lab.local` Active Directory domain.
   **Why it is necessary:** Domain membership allows for centralized authentication, group policy management, and resource access control.
-  ![Connecting to Server](connecting windows to server.jpg)
+  
+  ![Connecting to Server](./images/connectingwindowstoserver.jpg)
   ![Connection Process](./images/connecting.png)
   ![Linking Windows](./images/linkingwindowswithwindowsserver.png)
 * **Troubleshooting Connectivity**
