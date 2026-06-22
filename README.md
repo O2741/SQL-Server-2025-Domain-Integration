@@ -18,6 +18,7 @@ This project showcases the workflow required to bridge the gap between network-l
  * **Why it is necessary:** A static identity is required for consistent network communication, and proper DNS resolution is critical for the client to locate domain services.
   
   ![NSLookup Tool](./images/nslookup.png)
+  
   ![NSLookup Result](./images/nslookupresult.png)
 
 ## 2. Active Directory Domain Integration
@@ -25,47 +26,60 @@ This project showcases the workflow required to bridge the gap between network-l
 * **What it does:** Migrates the "James" workstation from a local workgroup environment into the `lab.local` Active Directory domain.
 * **Why it is necessary:** Domain membership allows for centralized authentication, group policy management, and resource access control.
   
-  * ![Connecting to Server](./images/connectingwindowstoserver.png)
-  * ![Connection Process](./images/connecting.png)
-  * ![Linking Windows](./images/linkingwindowswithwindowsserver.png)
+  ![Connecting to Server](./images/connectingwindowstoserver.png)
+  
+  ![Connection Process](./images/connecting.png)
+  
+  ![Linking Windows](./images/linkingwindowswithwindowsserver.png)
 
 
 * **Troubleshooting Connectivity**
 * **What it does:** Diagnoses and resolves Active Directory communication constraints during the domain binding phase.
 * **Why it is necessary:** Ensuring a healthy trust relationship between the client and the controller is mandatory for secure network operation.
-* ![Active Directory Error](./images/activedirectorydomainerror.png)
-* ![Successful Domain Connection](./images/sucessfullconfiguration.png)
+
+  ![Active Directory Error](./images/activedirectorydomainerror.png)
+  
+  ![Successful Domain Connection](./images/sucessfullconfiguration.png)
 
 ## 3. SQL Server 2025 Deployment
 * **Initialization & Prerequisites**
 * **What it does:** Executes the installer to verify system compatibility and prepare the environment for database services.
 * **Why it is necessary:** Establishing the database engine foundation is the first step in enabling enterprise data management.
-* ![Install Rules Error](./images/Errorafterinstallrules.png)
-* ![Feature Selection](./images/sqlfeatureselection.png)
+
+  ![Install Rules Error](./images/Errorafterinstallrules.png)
+  
+  ![Feature Selection](./images/sqlfeatureselection.png)
       
 * **Service Account & Authentication Strategy**
 * **What it does:** Defines startup privileges for SQL services and enables "Mixed Mode" authentication.
 * **Why it is necessary:** Mixed Mode provides the flexibility to support both domain-joined Windows accounts and native SQL application logins.
-* ![Server Configuration](./images/sqlserverconfigurationpart.png)
-* ![Configuration](./images/configurationofmixedmodeandSAuserpassword.png)
+
+  ![Server Configuration](./images/sqlserverconfigurationpart.png)
+  
+  ![Configuration](./images/configurationofmixedmodeandSAuserpassword.png)
       
 * **Installation Process**
 * **What it does:** Extracts and deploys the core SQL Server engine components.
 * **Why it is necessary:** Completes the transition from installation binaries to a fully functional database instance.
-* ![Installing SQL](./images/installingsqlserver.png)
-* ![Installation Progress](./images/installationinprogress.png)
-* ![Installation Complete](./images/SQLinstallationcomplete.png)
+
+  ![Installing SQL](./images/installingsqlserver.png)
+  
+  ![Installation Progress](./images/installationinprogress.png)
+  
+  ![Installation Complete](./images/SQLinstallationcomplete.png)
 
 ## 4. Administrative Management
 * **Management Studio Installation**
 * **What it does:** Installs SQL Server Management Studio (SSMS) on the client workstation.
 * **Why it is necessary:** SSMS is the primary administrative interface required to perform database queries, server configuration, and monitoring.
-* ![SSMS Installation](./images/sqlmanagementtoolsinstallation.jpg)
+
+  ![SSMS Installation](./images/sqlmanagementtoolsinstallation.jpg)
 
 * **Operational Verification**
 * **What it does:** Establishes a remote connection from the management utility to the SQL instance.
 * **Why it is necessary:** Final proof of system integrity, confirming the server is online, authenticating correctly, and ready for use.
-* ![Successfully Connected](./images/sucessfullyconnected.png)
+
+  ![Successfully Connected](./images/sucessfullyconnected.png)
 
 ---
 
