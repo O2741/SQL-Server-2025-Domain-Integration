@@ -41,7 +41,7 @@ This project showcases the workflow required to bridge the gap between network-l
     * **What it does:** Executes the installer to verify system compatibility and prepare the environment for database services.
     * **Why it is necessary:** Establishing the database engine foundation is the first step in enabling enterprise data management.
 
-![Install Rules Error](./images/iErrorafterinstallrules.png)
+![Install Rules Error](./images/Errorafterinstallrules.png)
 
 **Clarification on Warnings:** You may notice yellow warning icons in `image_a9d728.png` regarding the "Computer domain controller" and "Windows Firewall." These are expected in this lab environment and are not critical errors. These warnings do not affect the functionality of this virtualized lab setup, and you can safely proceed with the installation.
 
