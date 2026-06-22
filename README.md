@@ -29,36 +29,36 @@ This project showcases the workflow required to bridge the gap between network-l
 * **Troubleshooting Connectivity**
     * **What it does:** Diagnoses and resolves Active Directory communication constraints during the domain binding phase.
     * **Why it is necessary:** Ensuring a healthy trust relationship between the client and the controller is mandatory for secure network operation.
-    * ![Active Directory Error](active directory domain error.png)
-    * ![Successful Domain Connection](sucessfull configuration.png)
+    * ![Active Directory Error](activedirectorydomainerror.png)
+    * ![Successful Domain Connection](sucessfullconfiguration.png)
 
 ## 3. SQL Server 2025 Deployment
 * **Initialization & Prerequisites**
     * **What it does:** Executes the installer to verify system compatibility and prepare the environment for database services.
     * **Why it is necessary:** Establishing the database engine foundation is the first step in enabling enterprise data management.
-    * ![Install Rules Error](Error after install rules.png)
-    * ![Feature Selection](sql feature selection.png)
+    * ![Install Rules Error](Errorafterinstallrules.png)
+    * ![Feature Selection](sqlfeatureselection.png)
 * **Service Account & Authentication Strategy**
     * **What it does:** Defines startup privileges for SQL services and enables "Mixed Mode" authentication.
     * **Why it is necessary:** Mixed Mode provides the flexibility to support both domain-joined Windows accounts and native SQL application logins.
-    * ![Server Configuration](sql server configuration part.png)
+    * ![Server Configuration](sqlserverconfigurationpart.png)
     * ![Configuration](configuration of mixed mode and SA user password.png)
 * **Installation Process**
     * **What it does:** Extracts and deploys the core SQL Server engine components.
     * **Why it is necessary:** Completes the transition from installation binaries to a fully functional database instance.
-    * ![Installing SQL](installing sql server.png)
-    * ![Installation Progress](installation in progress.png)
-    * ![Installation Complete](SQL installation complete.png)
+    * ![Installing SQL](installingsqlserver.png)
+    * ![Installation Progress](installationinprogress.png)
+    * ![Installation Complete](SQLinstallationcomplete.png)
 
 ## 4. Administrative Management
 * **Management Studio Installation**
     * **What it does:** Installs SQL Server Management Studio (SSMS) on the client workstation.
     * **Why it is necessary:** SSMS is the primary administrative interface required to perform database queries, server configuration, and monitoring.
-    * ![SSMS Installation](sql management tools installation.jpg)
+    * ![SSMS Installation](sqlmanagementtoolsinstallation.jpg)
 * **Operational Verification**
     * **What it does:** Establishes a remote connection from the management utility to the SQL instance.
     * **Why it is necessary:** Final proof of system integrity, confirming the server is online, authenticating correctly, and ready for use.
-    * ![Successfully Connected](sucessfully connected.png)
+    * ![Successfully Connected](sucessfullyconnected.png)
 
 ---
 
