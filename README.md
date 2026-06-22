@@ -52,7 +52,7 @@ This project showcases the workflow required to bridge the gap between network-l
     * **Why it is necessary:** Mixed Mode provides the flexibility to support both domain-joined Windows accounts and native SQL application logins.
 
 ![Server Configuration](./images/sqlserverconfigurationpart.png)
-![Configuration](./images/configurationofmixedmodeandsauserpassword.png)
+![Configuration](./images/configurationofmixedmodeandSAuserpassword.png)
 
 * **Installation Process**
     * **What it does:** Extracts and deploys the core SQL Server engine components.
