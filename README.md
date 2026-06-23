@@ -79,14 +79,14 @@ Before beginning the deployment, ensure the following environment requirements a
     * **Step 1:** Check if TCP/IP is enabled.
         ![Enable TCPIP](./images/images/enabletcpip.png)
     * **Step 2:** Test connection and address firewall issues.
-        ![Port Error](./images/porterrorduetofirewallrule.png)
+        ![Port Error](./images/images/porterrorduetofirewallrule.png)
     * **Step 3:** Configure new firewall rule.
-        ![Adding Rule](./images/addingnewfirewallrule.png)
-        ![Adding Port](./images/addingport1433.png)
-        ![Adding Name](./images/addingname.png)
-        ![Port Open](./images/portopen.png)
+        ![Adding Rule](./images/images/addingnewfirewallrule.png)
+        ![Adding Port](./images/images/addingport1433.png)
+        ![Adding Name](./images/images/addingname.png)
+        ![Port Open](./images/images/portopen.png)
     * **Step 4:** Policy update and final verification.
-        ![GPUpdate](./images/gpupdate.png)
+        ![GPUpdate](./images/images/gpupdate.png)
         ![Successfully Connected](./images/sucessfullyconnected.png)
 
 ---
