@@ -8,8 +8,6 @@ This laboratory project provides a detailed technical documentation of building 
 3. **Database Server Provisioning:** Deploying a Microsoft SQL Server 2025 instance, including complex service account configuration and security policy hardening.
 4. **Administrative Operations:** Finalizing the environment by deploying remote management tools (SSMS) and verifying operational readiness through successful database connectivity.
 
-This project showcases the workflow required to bridge the gap between network-level connectivity and application-level database services in a Windows-based environment.
-
 ---
 
 ## Prerequisites
@@ -51,7 +49,7 @@ Before beginning the deployment, ensure the following environment requirements a
 
 ![Install Rules Error](./images/Errorafterinstallrules.png)
 
-**Clarification on Warnings:** You may notice yellow warning icons in `image_a9d728.png` regarding the "Computer domain controller" and "Windows Firewall." These are expected in this lab environment and are not critical errors. These warnings do not affect the functionality of this virtualized lab setup, and you can safely proceed with the installation.
+**Clarification on Warnings:** You may notice yellow warning icons regarding the "Computer domain controller" and "Windows Firewall." These are expected in this lab environment and are not critical errors. These warnings do not affect the functionality of this virtualized lab setup, and you can safely proceed with the installation.
 
 ![Feature Selection](./images/sqlfeatureselection.png)
 
@@ -70,18 +68,26 @@ Before beginning the deployment, ensure the following environment requirements a
 ![Installation Progress](./images/installationinprogress.png)
 ![Installation Complete](./images/SQLinstallationcomplete.png)
 
-## 4. Administrative Management
+## 4. Administrative Management & Troubleshooting
 * **Management Studio Installation**
     * **What it does:** Installs SQL Server Management Studio (SSMS) on the client workstation.
     * **Why it is necessary:** SSMS is the primary administrative interface required to perform database queries, server configuration, and monitoring.
 
 ![SSMS Installation](./images/sqlmanagementtoolsinstallation.png)
 
-* **Operational Verification**
-    * **What it does:** Establishes a remote connection from the management utility to the SQL instance.
-    * **Why it is necessary:** Final proof of system integrity, confirming the server is online, authenticating correctly, and ready for use.
-
-![Successfully Connected](./images/sucessfullyconnected.png)
+* **Troubleshooting Connectivity**
+    * **Step 1:** Check if TCP/IP is enabled.
+        ![Enable TCPIP](./images/enabletcpip.png)
+    * **Step 2:** Test connection and address firewall issues.
+        ![Port Error](./images/porterrorduetofirewallrule.png)
+    * **Step 3:** Configure new firewall rule.
+        ![Adding Rule](./images/addingnewfirewallrule.png)
+        ![Adding Port](./images/addingport1433.png)
+        ![Adding Name](./images/addingname.png)
+        ![Port Open](./images/portopen.png)
+    * **Step 4:** Policy update and final verification.
+        ![GPUpdate](./images/gpupdate.png)
+        ![Successfully Connected](./images/sucessfullyconnected.png)
 
 ---
 
@@ -97,6 +103,6 @@ Before beginning the deployment, ensure the following environment requirements a
 ---
 
 ## Conclusion
-This project successfully demonstrates the systematic deployment of a functional SQL Server environment within a domain-controlled network. By following these steps—from network configuration and Active Directory integration to service deployment and remote management—we have created a robust foundation for database administration. This lab highlights the importance of precise configuration, troubleshooting connectivity issues, and implementing secure authentication methods, all of which are essential skills for professional IT system administration.
+This project successfully demonstrates the systematic deployment of a functional SQL Server environment within a domain-controlled network. By following these steps—from network configuration and Active Directory integration to service deployment and remote management—we have created a robust foundation for database administration.
 
 > **Security Best Practice:** In a production environment, always ensure the `sa` account uses a highly complex, unique password and consider disabling SQL authentication in favor of Windows-only authentication where business requirements permit.
