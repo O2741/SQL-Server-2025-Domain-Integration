@@ -12,6 +12,14 @@ This project showcases the workflow required to bridge the gap between network-l
 
 ---
 
+## Prerequisites
+Before beginning the deployment, ensure the following environment requirements are met:
+* **Infrastructure:** Domain Controller (Windows Server 2025) running Active Directory Domain Services (AD DS) and a Client Workstation (Windows 10/11).
+* **Network Connectivity:** Virtual or physical isolation ensuring the client and server can communicate via the specified IP range ($192.168.1.0/24$).
+* **Installation Media:** Valid Windows Server/SQL Server 2025 installation images and the SSMS installer.
+
+---
+
 ## 1. Network Configuration
 * **Static IP & DNS Setup**
     * **What it does:** Assigns a fixed IP address ($192.168.1.11$) to the workstation and configures the DNS settings to point to the Domain Controller ($192.168.1.10$).
@@ -77,5 +85,18 @@ This project showcases the workflow required to bridge the gap between network-l
 
 ---
 
+## 5. Technical Summary
+| Component | Configuration Value |
+| :--- | :--- |
+| **Domain Name** | `lab.local` |
+| **Domain Controller IP** | `192.168.1.10` |
+| **Workstation IP** | `192.168.1.11` |
+| **SQL Auth Mode** | Mixed Mode (Windows + SQL) |
+| **Admin Account** | `sa` (System Administrator) |
+
+---
+
 ## Conclusion
 This project successfully demonstrates the systematic deployment of a functional SQL Server environment within a domain-controlled network. By following these steps—from network configuration and Active Directory integration to service deployment and remote management—we have created a robust foundation for database administration. This lab highlights the importance of precise configuration, troubleshooting connectivity issues, and implementing secure authentication methods, all of which are essential skills for professional IT system administration.
+
+> **Security Best Practice:** In a production environment, always ensure the `sa` account uses a highly complex, unique password and consider disabling SQL authentication in favor of Windows-only authentication where business requirements permit.
