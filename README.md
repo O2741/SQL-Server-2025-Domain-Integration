@@ -77,7 +77,7 @@ Before beginning the deployment, ensure the following environment requirements a
 
 * **Troubleshooting Connectivity**
     * **Step 1:** Check if TCP/IP is enabled.
-        ![Enable TCPIP](./images/enabletcpip.png)
+        ![Enable TCPIP](./images/images/enabletcpip.png)
     * **Step 2:** Test connection and address firewall issues.
         ![Port Error](./images/porterrorduetofirewallrule.png)
     * **Step 3:** Configure new firewall rule.
